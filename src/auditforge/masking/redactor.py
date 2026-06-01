@@ -10,9 +10,9 @@ _BEARER_RE = re.compile(r"(?i)\bBearer\s+[A-Za-z0-9._~+/\-]+=*")
 _COOKIE_HEADER_RE = re.compile(r"(?im)^(cookie|set-cookie)\s*:\s*[^\r\n]+")
 _COOKIE_VALUE_RE = re.compile(r"(?i)\b(sessionid|sid|jsessionid|phpsessid|connect\.sid|csrftoken|xsrf-token)\s*=\s*[^;\s]+")
 _SECRET_ASSIGNMENT_RE = re.compile(
-    r"(?i)\b(api[_-]?key|access[_-]?token|secret[_-]?key|client[_-]?secret|token)\s*[:=]\s*[\"']?[^\"'\s,;]+[\"']?"
+    r"(?i)(?<![\w-])(api[_-]?key|access[_-]?token|secret[_-]?key|client[_-]?secret|token)\s*[:=]\s*[\"']?[^\"'\s,;]+[\"']?"
 )
-_PASSWORD_ASSIGNMENT_RE = re.compile(r"(?i)\b(password|passwd|pwd)\s*[:=]\s*[\"']?[^\"'\s,;]+[\"']?")
+_PASSWORD_ASSIGNMENT_RE = re.compile(r"(?i)(?<![\w-])(password|passwd|pwd)\s*[:=]\s*[\"']?[^\"'\s,;]+[\"']?")
 
 
 def redact_text(value: object) -> str:
