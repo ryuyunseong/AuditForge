@@ -1,0 +1,20 @@
+{
+  "findings": [
+    {
+      "title": "Reflected XSS in search page",
+      "severity": "High",
+      "affected_asset": "https://app.example.test/search",
+      "evidence": "Query echoed without encoding: <script>alert(1)</script>. Contact tester at qa@example.com.",
+      "impact": "Attackers may execute JavaScript in a user's browser.",
+      "recommendation": "Encode output by context and add automated tests for reflected input."
+    },
+    {
+      "title": "Informational banner disclosure",
+      "severity": "Info",
+      "affected_asset": "https://app.example.test/",
+      "evidence": "Server header includes sample build metadata.",
+      "impact": "The disclosed value has limited standalone security impact.",
+      "recommendation": "Remove unnecessary version details from public headers."
+    }
+  ]
+}
