@@ -6,6 +6,33 @@ AuditForge is a small open-source CLI that converts security assessment findings
 
 It is designed for user-provided assessment results, not for unauthorized scanning. The tool normalizes finding records, groups findings by severity, redacts common sensitive values, and writes a report that can be reviewed before delivery.
 
+## Quick Demo
+
+Use the fake web assessment sample input in [examples/sample_web_findings.csv](examples/sample_web_findings.csv) to generate report drafts.
+
+Generate a Markdown report:
+
+```powershell
+$env:PYTHONPATH = "src"
+python -m auditforge convert examples\sample_web_findings.csv --out examples\sample_web_report.md
+```
+
+Generate an HTML report:
+
+```powershell
+$env:PYTHONPATH = "src"
+python -m auditforge convert examples\sample_web_findings.csv --out examples\sample_web_report.html
+```
+
+Review the sample outputs:
+
+- [examples/sample_web_report.md](examples/sample_web_report.md)
+- [examples/sample_web_report.html](examples/sample_web_report.html)
+
+For report wording examples, see [docs/report-template-examples.md](docs/report-template-examples.md). For the latest release summary, see [docs/release-notes-v0.2.0.md](docs/release-notes-v0.2.0.md).
+
+AuditForge processes user-provided assessment findings only and does not perform scanning, exploitation, probing, or unauthorized testing.
+
 ## Who Should Use It
 
 AuditForge is intended for security consultants, internal security teams, and application owners who already have assessment findings and want a repeatable way to turn them into consistent report drafts.
