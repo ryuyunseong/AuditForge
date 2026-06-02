@@ -1,6 +1,6 @@
 # Changelog
 
-## 0.2.0 - Draft
+## 0.2.0 - 2026-06-02
 
 - Improve redaction test coverage for common sensitive value patterns and mixed multiline evidence.
 - Add a fake web assessment sample input and generated Markdown report.

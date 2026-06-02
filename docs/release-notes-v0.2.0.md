@@ -1,6 +1,6 @@
-# AuditForge v0.2.0 Release Notes Draft
+# AuditForge v0.2.0 Release Notes
 
-This draft summarizes the planned v0.2.0 release of AuditForge.
+This release improves AuditForge report output, examples, and documentation while keeping the project focused on user-provided assessment results.
 
 ## Highlights
 
@@ -74,7 +74,7 @@ python -m auditforge convert examples\sample_web_findings.csv --out examples\sam
 
 ## Follow-Up Work
 
-The following larger work items remain outside this release draft:
+The following larger work items remain outside this release:
 
 - Burp Suite export import support
 - Configurable report templates

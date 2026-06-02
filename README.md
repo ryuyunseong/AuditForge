@@ -108,7 +108,7 @@ The web assessment sample includes common finding types such as SQL injection, c
 
 For wording examples, see `docs/report-template-examples.md`. It includes fake English and Korean examples for finding titles, evidence, impact, and recommendations.
 
-The draft v0.2.0 release notes are available in `docs/release-notes-v0.2.0.md`.
+The v0.2.0 release notes are available in `docs/release-notes-v0.2.0.md`.
 
 ## Security Notes
 
