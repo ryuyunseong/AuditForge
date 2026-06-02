@@ -93,6 +93,7 @@ Sample files are provided in `examples/`:
 - `examples/sample_web_findings.csv`
 - `examples/sample_web_report.md`
 - `examples/sample_web_report.html`
+- `docs/report-template-examples.md`
 
 The samples use fake domains and fake data only.
 
@@ -104,6 +105,8 @@ auditforge convert examples/sample_web_findings.csv --out examples/sample_web_re
 ```
 
 The web assessment sample includes common finding types such as SQL injection, cross-site scripting, missing security headers, directory listing, and weak TLS configuration.
+
+For wording examples, see `docs/report-template-examples.md`. It includes fake English and Korean examples for finding titles, evidence, impact, and recommendations.
 
 ## Security Notes
 
