@@ -108,6 +108,8 @@ The web assessment sample includes common finding types such as SQL injection, c
 
 For wording examples, see `docs/report-template-examples.md`. It includes fake English and Korean examples for finding titles, evidence, impact, and recommendations.
 
+The draft v0.2.0 release notes are available in `docs/release-notes-v0.2.0.md`.
+
 ## Security Notes
 
 - Review generated reports before sharing them.
@@ -142,7 +144,7 @@ python -m compileall src tests
 
 ## Roadmap
 
-- HTML report output
+- Configurable report templates
 - Burp export parsing
 - Rule packs for common web and infrastructure findings
 - Local web UI
